@@ -1,5 +1,5 @@
 body{
-    font-family:Georgia, serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left:200px;
     margin-right:200px;
 }
@@ -17,6 +17,7 @@ header{
     padding:10px;
     width:100%;
     justify-content: center;
+    margin-bottom: 10px;
     margin-top:20px;
     border-radius:8px;
 }
@@ -35,8 +36,9 @@ header{
 #profile{
     margin-top:40px;
     width:100%;
-    height: 70vh;
+    height: auto;
     display:flex;
+    margin-bottom: 10px;
     justify-content:center;
 }
 .profile-pic{
@@ -74,6 +76,7 @@ header{
     width:100%;
     height:auto;
     text-align:center;
+    margin-bottom: 10px;
     gap:10px;
     display:flex;
     flex-wrap:wrap;
@@ -94,6 +97,7 @@ header{
     height: auto;
     margin-top:20px;
     text-align: center;
+    margin-bottom: 10px;
     display:flex;
     flex-wrap:wrap;
     gap:10px;
@@ -101,7 +105,7 @@ header{
 }
 .edu-card{
     width:26%;
-    height:100%;
+    height:150px;
     padding:4px;
     min-width:150px;
     background: #9DD2FE;
@@ -118,6 +122,7 @@ header{
     margin-top:20px;
     width:100%;
     height: 50vh;
+    margin-bottom: 10px;
     text-align: center;
     display:flex;
     flex-wrap:wrap;
@@ -136,7 +141,24 @@ header{
     border-radius:5px;
 }
 
+.bar-container{
+    height:5px;
+    width:100%;
+    border-radius:2px;
+    background:white;
+    opacity: 70%;
+}
 
+.bar{
+    width:80%;
+    height:100%;
+    background:green;
+}
+.percent{
+    margin:0px;
+    font-size:12px;
+    text-align:right;
+}
 
 #tools-container{
     display:flex;
@@ -144,6 +166,8 @@ header{
     width:100%;
     height:auto;
     justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap:wrap;
 }
 
 #tools-container img{
@@ -157,10 +181,94 @@ header{
     width:100%;
     height:auto;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content:space-evenly;
 }
 
 #photo-essay img{
     width:auto;
     height: auto;
+}
+
+#videos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+#documents{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+#documents a{
+    background: black;
+    opacity:80%;
+    border-radius:8px;
+    padding:10px;
+    height:30px;
+    width:20%;
+    flex-grow:0.2;
+}
+
+.section-divider{
+    width:100%;
+    height:2px;
+    background: black;
+    opacity:50%;
+}
+#footer{
+    margin-top:40px;
+    width:100%;
+    text-align:center;
+    height: auto;
+    padding:20px;
+    background: rgb(200,200,200);
+    display:block;
+}
+a{
+    text-decoration:none;
+    color: blueviolet;
+}
+#form-container{
+    width:30%;
+}
+.socials{
+    width: 50px;
+    height: 50px;
+}
+#socials{
+    margin-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+
+@media screen and (max-width: 960px) {
+    body{
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-left:5px;
+        margin-right:5px;
+    }
+    .nav-link{
+        width:100%;
+    }
+    .edu-card{
+        width:50%;
+        height:100px;
+        flex-grow:1;
+    }
+    #skills{
+        height: auto;
+    }
+    
+    .skill-card{
+        width:40%;
+        flex-grow: 0.5;
+        background: #8874EC;
+    }
 }
